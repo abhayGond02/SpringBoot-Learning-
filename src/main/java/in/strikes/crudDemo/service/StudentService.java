@@ -143,4 +143,9 @@ public class StudentService {
     private boolean emailExists(Student student) {
         return studentRepository.existsByEmail(student.getEmail());
     }
+
+    public void printName(Student student){
+
+        System.out.println(student.getEmail());
+    }
 }
